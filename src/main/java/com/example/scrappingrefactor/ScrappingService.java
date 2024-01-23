@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class ScrappingService {
-    private final Environment env;
+    private final PaperMakerSelector selector;
 
     public void apiBackCtl(String number, String paperMakerCode) {
         switch (number){
@@ -20,20 +20,20 @@ public class ScrappingService {
     }
 
     private void doLogin(String paperMakerCode) {
-        new PaperMakerSelector(env).selectPaperMaker(paperMakerCode).login();
+        selector.selectPaperMaker(paperMakerCode).login();
     }
 
     private void getStocks(String paperMakerCode) {
-        new PaperMakerSelector(env).selectPaperMaker(paperMakerCode).getStocks();
+        selector.selectPaperMaker(paperMakerCode).getStocks();
     }
 
     private void getDeliveryPlace(String paperMakerCode) {
-        new PaperMakerSelector(env).selectPaperMaker(paperMakerCode).getDeliveryPlace();
+        selector.selectPaperMaker(paperMakerCode).getDeliveryPlace();
 
     }
 
     private void doOrder(String paperMakerCode) {
-        new PaperMakerSelector(env).selectPaperMaker(paperMakerCode).doOrder();
+        selector.selectPaperMaker(paperMakerCode).doOrder();
     }
 
 }

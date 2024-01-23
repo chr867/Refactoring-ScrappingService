@@ -1,0 +1,29 @@
+Moorim:
+  login: "moorimLoginURL"
+  getStocks: "moorimGetStocksURL"
+  getDelivery: "moorimGetDeliveryURL"
+  order: "moorimOrderURL"
+
+Hansol:
+  login: "moorimLoginURL"
+  getStocks: "moorimGetStocksURL"
+  getDelivery: "moorimGetDeliveryURL"
+  order: "moorimOrderURL"
+
+Hankook:
+  login: "HankookLoginURL"
+  getStocks: "HankookGetStocksURL"
+  getDelivery: "HankookGetDeliveryURL"
+  order: "HankookOrderURL"
+
+Cn:
+  login: "CnLoginURL"
+  getStocks: "CnGetStocksURL"
+  getDelivery: "CnGetDeliveryURL"
+  order: "CnOrderURL"
+
+Hongwon:
+  login: "HongwonLoginURL"
+  getStocks: "HongwonGetStocksURL"
+  getDelivery: "HongwonGetDeliveryURL"
+  order: "mooriHongwonOrderURL"

@@ -8,7 +8,6 @@ public final class HankookServiceImpl extends paperMakerImpl implements PaperMak
     public HankookServiceImpl(Environment env) {
         super(env);
     }
-
     @Override
     public void login() {
         /* Unirest, Jsoup을 사용해 구현했던 코드 */
